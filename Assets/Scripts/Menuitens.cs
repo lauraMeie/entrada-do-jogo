@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class diarioclicavel : MonoBehaviour
+public class MeunuItens : MonoBehaviour
+   
 {
     [Header("Painel que vai sobrepor a tela")]
-    public GameObject Imagediario; // arraste aqui o objeto "Imagediario"
+    public GameObject Image; // arraste aqui o objeto "Imagediario"
 
     [Header("Objetos para esconder enquanto o diário está aberto")]
-    public GameObject botaoVerde; // arraste aqui o botão verde que precisa sumir
+    public GameObject MenuBotoes; // arraste aqui o botão verde que precisa sumir
 
     [Header("Efeito ao passar o mouse")]
     public float escalaHover = 1.1f; // quanto o ícone cresce (1.1 = 10% maior)
@@ -18,8 +19,8 @@ public class diarioclicavel : MonoBehaviour
 
     void Start()
     {
-        if (Imagediario != null)
-            Imagediario.SetActive(false);
+        if (Image != null)
+            Image.SetActive(false);
 
         escalaOriginal = transform.localScale;
         escalaAlvo = escalaOriginal;
@@ -51,11 +52,11 @@ public class diarioclicavel : MonoBehaviour
 
     public void AbrirPainel()
     {
-        if (Imagediario != null)
-            Imagediario.SetActive(true);
+        if (Image != null)
+            Image.SetActive(true);
 
-        if (botaoVerde != null)
-            botaoVerde.SetActive(false);
+        if (MenuBotoes != null)
+            MenuBotoes.SetActive(false);
 
         if (meuSprite != null)
             meuSprite.enabled = false;
@@ -63,11 +64,11 @@ public class diarioclicavel : MonoBehaviour
 
     public void FecharPainel()
     {
-        if (Imagediario != null)
-            Imagediario.SetActive(false);
+        if (Image != null)
+            Image.SetActive(false);
 
-        if (botaoVerde != null)
-            botaoVerde.SetActive(true);
+        if (MenuBotoes != null)
+            MenuBotoes.SetActive(true);
 
         if (meuSprite != null)
             meuSprite.enabled = true;
