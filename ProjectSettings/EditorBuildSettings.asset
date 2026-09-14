@@ -14,5 +14,17 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/cen\xE1rio3.unity"
     guid: fea210398793f984c89379f727c50da5
+  - enabled: 1
+    path: Assets/FaseZonaDosLobosCinzentos.unity
+    guid: 22a1e59e2c5714a409c0f20f96f7025f
+  - enabled: 1
+    path: Assets/FaseZonaDaGrandeQueda.unity
+    guid: 1d1e3b7559d201e468c049e92bb5ded6
+  - enabled: 1
+    path: Assets/FaseValeDasPlantasVenenosas.unity
+    guid: 0c8053b75f447ef4aa7f974f7c419be4
+  - enabled: 1
+    path: Assets/FaseMontanhaDaTempestade.unity
+    guid: e46322a363a2b754da8d995c825b3214
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

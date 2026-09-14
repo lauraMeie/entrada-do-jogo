@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 536103175}
   - component: {fileID: 536103174}
   - component: {fileID: 536103173}
+  - component: {fileID: 536103176}
   m_Layer: 5
   m_Name: BotaoTina
   m_TagString: Untagged
@@ -492,6 +493,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536103171}
   m_CullTransparentMesh: 1
+--- !u!114 &536103176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536103171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ea56c7bd8586f428925f5d1dd193f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
+  escalaHover: 1.1
+  velocidadeHover: 8
 --- !u!1 &656103548
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,8 +643,9 @@ GameObject:
   - component: {fileID: 979164499}
   - component: {fileID: 979164498}
   - component: {fileID: 979164501}
+  - component: {fileID: 979164502}
   m_Layer: 5
-  m_Name: VoltarPersonagem
+  m_Name: "VoltarCen\xE1rio"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,6 +778,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Voltarcen\xE1rio2para1"
   nomeDaCena: Entrada do jogo.
+--- !u!114 &979164502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979164496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ea56c7bd8586f428925f5d1dd193f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
+  escalaHover: 1.1
+  velocidadeHover: 8
 --- !u!1 &1139201391
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +804,7 @@ GameObject:
   - component: {fileID: 1139201395}
   - component: {fileID: 1139201394}
   - component: {fileID: 1139201393}
+  - component: {fileID: 1139201396}
   m_Layer: 5
   m_Name: BotaoBeto
   m_TagString: Untagged
@@ -894,6 +925,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139201391}
   m_CullTransparentMesh: 1
+--- !u!114 &1139201396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139201391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ea56c7bd8586f428925f5d1dd193f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
+  escalaHover: 1.1
+  velocidadeHover: 8
 --- !u!1 &1229272874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,7 +1464,7 @@ Transform:
   m_GameObject: {fileID: 2029314453}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -0.03, z: 0}
+  m_LocalPosition: {x: -0.01, y: -0.01, z: 0}
   m_LocalScale: {x: 1.1824031, y: 1.0238376, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
