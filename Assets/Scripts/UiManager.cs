@@ -5,10 +5,8 @@ public class UiManager : MonoBehaviour
 {
     public static UiManager Instance { get; private set; }
 
-    [SerializeField] private GameObject hudPrefab;
-    [SerializeField] private string[] scenesWithoutHUD = { "Entrada do Jogo.", "cenário2", "GameOver" };
-    private int hudOrderInLayer;
-
+    [SerializeField] private GameObject HudPrefab;
+    [SerializeField] private string[] ScenesWithoutHUD;
     private GameObject currentHUD;
 
     private void Awake()
@@ -26,7 +24,7 @@ public class UiManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (System.Array.Exists(scenesWithoutHUD, element => element == scene.name.ToLower()))
+        if (System.Array.Exists(ScenesWithoutHUD, element => element.ToLower().Normalize() == scene.name.ToLower().Normalize()))
         {
             DisableHUD();
         }
@@ -40,7 +38,7 @@ public class UiManager : MonoBehaviour
     {
         if (currentHUD == null)
         {
-            currentHUD = Instantiate(hudPrefab);
+            currentHUD = Instantiate(HudPrefab);
         }
         else
         {
