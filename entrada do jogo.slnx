@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="Assembly-CSharp.csproj" Id="b04a67d0-a2f2-2d82-4601-5af450cb44b0" />
+  <Project Path="API/AventuraMatemagicaAPI/AventuraMatemagicaAPI.csproj" Id="9b23e994-7f16-424c-b7f0-737853b1f4ce" />
   <Project Path="Assembly-CSharp-Editor.csproj" Id="bb0005ca-0b72-f41a-22b5-7631c8d3e229" />
+  <Project Path="Assembly-CSharp.csproj" Id="b04a67d0-a2f2-2d82-4601-5af450cb44b0" />
 </Solution>
