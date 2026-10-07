@@ -10,7 +10,7 @@ namespace AventuraMatemagicaAPI.ModalQuestoes.Models
         public int CodQuestao {  get; set; }
         public int CodCapitulo { get; set; }
         public string Enunciado { get; set; }
-        public TimeOnly TempoResposta { get; set; }
+        public TimeSpan TempoResposta { get; set; }
         public Alternativa AlternativaSelecionada { get; set; }
         public bool Respondida 
         { 
