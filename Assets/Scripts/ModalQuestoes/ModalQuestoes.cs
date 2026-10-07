@@ -1,17 +1,17 @@
 using UnityEngine;
 
-using AventuraMatemagicaAPI.ModalQuestoes.Models;
-using AventuraMatemagicaAPI.ModalQuestoes.Services;
+//using AventuraMatemagicaAPI.ModalQuestoes.Models;
+//using AventuraMatemagicaAPI.ModalQuestoes.Services;
 
 public class ModalQuestoes : MonoBehaviour
 {
-    private readonly FluxoQuestoesFaseService _service;
-    private FluxoQuestoesFase FluxoQuestoesFase;
+    //private readonly FluxoQuestoesFaseService _service;
+    //private FluxoQuestoesFase FluxoQuestoesFase;
 
-    public ModalQuestoes(FluxoQuestoesFaseService service)
-    {
-        _service = service;
-    }
+    //public ModalQuestoes(FluxoQuestoesFaseService service)
+    //{
+    //    _service = service;
+    //}
 
     public void onClickSelecionaAlternativa()
     {
@@ -19,6 +19,6 @@ public class ModalQuestoes : MonoBehaviour
     }
     public void carregaQuestoesModal() 
     {
-        FluxoQuestoesFase = _service.GeraFluxo(1);
+        //FluxoQuestoesFase = _service.GeraFluxo(1);
     }
 }
