@@ -28,4 +28,28 @@ public class TempoFase : MonoBehaviour
         int segundos = Mathf.FloorToInt(time % 60f);
         tempoText.text = string.Format("{0:00}:{1:00}", minutos, segundos);
     }
+
+    void PausarGame()
+    {
+        rodando = false;
+    }
+
+    void ContinuarGame()
+    {
+        rodando = true;
+    }
+
+    void SairGame()
+    {
+        rodando = false;
+        time = 0f;
+        tempoText.text = "00:00";
+    }
+
+    void ReiniciarGame()
+    {
+        rodando = true;
+        time = 0f;
+        tempoText.text = "00:00";
+    }
 }
