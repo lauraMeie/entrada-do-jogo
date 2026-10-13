@@ -15,10 +15,10 @@ namespace AventuraMatemagicaAPI.ModalQuestoes.Services
             _questaoService = questaoService;
         }
 
-        public async Task<FluxoQuestoesFase> GeraFluxo(int codCapitulo)
+        public FluxoQuestoesFase GeraFluxo(int codCapitulo)
         {
             FluxoQuestoesFase fluxoQuestoesFase = new FluxoQuestoesFase();
-            fluxoQuestoesFase.Questoes = await _questaoService.GetAll(codCapitulo);
+            fluxoQuestoesFase.Questoes = _questaoService.GetAll(codCapitulo);
             return fluxoQuestoesFase;
         }
         public void ResponderQuestao(Questao questao, Alternativa alternativaSelecionada)
