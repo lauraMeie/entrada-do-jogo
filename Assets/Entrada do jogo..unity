@@ -851,6 +851,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82dd9e439fc299a498bd22c184072209, type: 3}
+--- !u!1 &1199288216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5425794871817937871, guid: 82dd9e439fc299a498bd22c184072209, type: 3}
+  m_PrefabInstance: {fileID: 1199288215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1234223291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,11 +1023,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4133d33eeaf5c745b023a4531d81939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  hudPrefab: {fileID: 5425794871817937871, guid: 82dd9e439fc299a498bd22c184072209, type: 3}
-  scenesWithoutHUD:
-  - entrada do jogo.
+  HudPrefab: {fileID: 1199288216}
+  ModalQuestoesPrefab: {fileID: 0}
+  ScenesWithoutHUD:
+  - Entrada do jogo.
   - "cen\xE1rio2"
-  - GameOver
+  ScenesWithModalQuestoes:
+  - FaseZonaDosLobosCinzentos
+  - FaseValeDasPlantasVenenosas
+  - FaseMontanhaDaTempestade
+  - FaseZonaDaGrandeQueda
 --- !u!4 &1422139823
 Transform:
   m_ObjectHideFlags: 0
