@@ -18,13 +18,13 @@ namespace AventuraMatemagicaAPI.ModalQuestoes.Services
             Questao questao = _questaoRepository.GetQuestao(codQuestao, codCapitulo);
             return questao;
         }
-        public async Task<List<Questao>> GetAll()
+        public List<Questao> GetAll()
         {
-            return await _questaoRepository.GetAll();
+            return _questaoRepository.GetAll();
         }
-        public async Task<List<Questao>> GetAll(int codCapitulo)
+        public List<Questao> GetAll(int codCapitulo)
         {
-            List<Questao> questoes = await GetAll();
+            List<Questao> questoes = GetAll();
             return questoes.FindAll(q => q.CodCapitulo == codCapitulo);
         }
     }

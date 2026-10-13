@@ -1,3 +1,5 @@
+using AventuraMatemagicaAPI;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,7 +8,7 @@ public class UiManager : MonoBehaviour
     public static UiManager Instance { get; private set; }
 
     [SerializeField] private GameObject HudPrefab;
-    [SerializeField] private string[] ScenesWithoutHUD;
+    [SerializeField] private int[] ScenesWithoutHUD;
     private GameObject currentHUD;
 
     private void Awake()
@@ -24,7 +26,7 @@ public class UiManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (System.Array.Exists(ScenesWithoutHUD, element => element.ToLower().Normalize() == scene.name.ToLower().Normalize()))
+        if (System.Array.Exists(ScenesWithoutHUD, element => Utils.GetScenesFromEnum((scenes)element) == scene.name))
         {
             DisableHUD();
         }
