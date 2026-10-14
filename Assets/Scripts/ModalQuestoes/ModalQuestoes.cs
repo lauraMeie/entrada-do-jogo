@@ -8,12 +8,11 @@ using TMPro;
 using NUnit.Framework;
 using Assets.Scripts.ModalQuestoes;
 using UnityEngine.UI;
+using System;
 
 public class ModalQuestoes : MonoBehaviour
 {
-    private FluxoQuestoesFaseService _service;
-    private FluxoQuestoesFase FluxoQuestoesFase;
-
+    protected Questao QuestaoAtual;
     [SerializeField]
     public ModalQuestoesButton[] AlternativasButtons;
 
@@ -21,14 +20,12 @@ public class ModalQuestoes : MonoBehaviour
     public TMP_Text DescricaoQuestao;
     [SerializeField]
     public Button PularQuestaoButton;
+    public event Action<Alternativa> RespostaSelecionada;
+    public event Action AoOcultar;
 
     private void Awake()
     {
-        _service = new FluxoQuestoesFaseService(
-            new QuestaoService(
-                new QuestaoRepository()));
-        if (FluxoQuestoesFase == null)
-            FluxoQuestoesFase = _service.GeraFluxo(1);
+        
     }
 
     private void OnEnable()
@@ -38,7 +35,7 @@ public class ModalQuestoes : MonoBehaviour
             button.OnAlternativaSelecionada += TratarAlternativaSelecionada;
         }
         //PularQuestaoButton.OnPulouQuestao += PularQuestao;
-        carregaProximaQuestao();
+        carregaQuestao();
     }
 
     private void OnDisable()
@@ -48,23 +45,18 @@ public class ModalQuestoes : MonoBehaviour
             button.OnAlternativaSelecionada -= TratarAlternativaSelecionada;
         }
         //PularQuestaoButton.OnPulouQuestao -= PularQuestao;
+        AoOcultar?.Invoke();
     }
     private void TratarAlternativaSelecionada(ModalQuestoesButton button)
     {
-        if (button.Alternativa.Correta)
-        {
-            carregaProximaQuestao();
-        }
-        else
-        {
-            Debug.Log("Resposta incorreta!");
-        }
+        RespostaSelecionada?.Invoke(button.Alternativa);
     }
-    public async Task carregaProximaQuestao() 
+
+    private void carregaQuestao()
     {
-        FluxoQuestoesFase.QuestaoAtual = FluxoQuestoesFase.ProximaQuestao();
-        DescricaoQuestao.text = FluxoQuestoesFase.QuestaoAtual.Enunciado;
-        foreach (Alternativa alternativa in FluxoQuestoesFase.QuestaoAtual.Alternativas)
+        if (QuestaoAtual == null) return;
+        DescricaoQuestao.text = QuestaoAtual.Enunciado;
+        foreach (Alternativa alternativa in QuestaoAtual.Alternativas)
         {
             foreach (ModalQuestoesButton button in AlternativasButtons)
             {
@@ -76,13 +68,22 @@ public class ModalQuestoes : MonoBehaviour
         }
     }
 
-    public async Task responderQuestao()
+    public void responderQuestao()
     {
 
     }
 
-    public async Task pularQuestao()
+    public void pularQuestao()
     {
 
+    }
+    public void Ocultar()
+    {
+        gameObject.SetActive(false);
+    }
+    public void Exibir(Questao questao)
+    {
+        QuestaoAtual = questao;
+        gameObject.SetActive(true);
     }
 }

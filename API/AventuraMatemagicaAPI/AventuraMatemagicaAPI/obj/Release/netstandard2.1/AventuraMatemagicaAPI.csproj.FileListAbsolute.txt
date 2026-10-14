@@ -1,0 +1,10 @@
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\bin\Release\netstandard2.1\AventuraMatemagicaAPI.deps.json
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\bin\Release\netstandard2.1\AventuraMatemagicaAPI.dll
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\bin\Release\netstandard2.1\AventuraMatemagicaAPI.pdb
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\obj\Release\netstandard2.1\AventuraMatemagicaAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\obj\Release\netstandard2.1\AventuraMatemagicaAPI.AssemblyInfoInputs.cache
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\obj\Release\netstandard2.1\AventuraMatemagicaAPI.AssemblyInfo.cs
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\obj\Release\netstandard2.1\AventuraMatemagicaAPI.csproj.CoreCompileInputs.cache
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\obj\Release\netstandard2.1\AventuraMatemagicaAPI.sourcelink.json
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\obj\Release\netstandard2.1\AventuraMatemagicaAPI.dll
+C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\obj\Release\netstandard2.1\AventuraMatemagicaAPI.pdb
