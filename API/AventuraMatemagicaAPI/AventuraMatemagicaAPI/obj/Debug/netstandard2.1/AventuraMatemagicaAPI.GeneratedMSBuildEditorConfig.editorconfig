@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = AventuraMatemagicaAPI
+build_property.ProjectDir = C:\Faculdade\4\PAC\entrada-do-jogo\API\AventuraMatemagicaAPI\AventuraMatemagicaAPI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
