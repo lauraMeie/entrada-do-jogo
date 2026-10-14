@@ -2,6 +2,7 @@
 using AventuraMatemagicaAPI.ModalQuestoes.Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace AventuraMatemagicaAPI.ModalQuestoes.Services
@@ -19,6 +20,7 @@ namespace AventuraMatemagicaAPI.ModalQuestoes.Services
         {
             FluxoQuestoesFase fluxoQuestoesFase = new FluxoQuestoesFase();
             fluxoQuestoesFase.Questoes = _questaoService.GetAll(codCapitulo);
+            fluxoQuestoesFase.QuestaoAtual = fluxoQuestoesFase.Questoes.FirstOrDefault();
             return fluxoQuestoesFase;
         }
         public void ResponderQuestao(Questao questao, Alternativa alternativaSelecionada)
