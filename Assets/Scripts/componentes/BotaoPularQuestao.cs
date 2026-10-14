@@ -3,15 +3,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
+// Criamos um evento personalizado que permite enviar um número (int)
+[System.Serializable]
+public class EventoPularQuestao : UnityEvent<int> { }
+
 [RequireComponent(typeof(Button))]
 public class BotaoPularQuestao : MonoBehaviour
 {
     [Header("Configurações de Regra")]
     [SerializeField] private int custoEmTrevos = 3;
-    [SerializeField] private float tempoEsperaEntreCliques = 1.0f; // Trava para evitar spam de cliques
+    [SerializeField] private float tempoEsperaEntreCliques = 1.0f;
 
     [Header("Eventos")]
-    public UnityEvent OnQuestaoPulada;
+    // Agora o evento envia o custoEmTrevos para o SceneController/Service
+    public EventoPularQuestao OnQuestaoPulada;
 
     private Button botao;
     private bool estaProcessando = false;
@@ -24,26 +29,13 @@ public class BotaoPularQuestao : MonoBehaviour
 
     private void OnDisable()
     {
-        // Reseta o estado se o botão for ocultado da tela
         estaProcessando = false;
         if (botao != null) botao.interactable = true;
     }
 
     public void TentarPular()
     {
-        // Validação 1: Impede cliques duplos/seguidos enquanto processa
         if (estaProcessando) return;
-
-        // Validação 2: Checagem temporária de Trevos (3 trevos)
-        bool temTrevosSuficientes = true; // TODO: conectar com TrevosManager
-
-        if (!temTrevosSuficientes)
-        {
-            Debug.LogWarning("[BotaoPularQuestao] Trevos insuficientes para pular.");
-            return;
-        }
-
-        // Bloqueia novos cliques
         StartCoroutine(RotinaProcessarPulo());
     }
 
@@ -52,10 +44,9 @@ public class BotaoPularQuestao : MonoBehaviour
         estaProcessando = true;
         if (botao != null) botao.interactable = false;
 
-        Debug.Log("[BotaoPularQuestao] Questão pulada com sucesso! Disparando evento.");
-        OnQuestaoPulada?.Invoke();
+        // Apenas dispara o evento enviando o "3". A validação ocorre fora daqui.
+        OnQuestaoPulada?.Invoke(custoEmTrevos);
 
-        // Aguarda o tempo de segurança antes de reativar
         yield return new WaitForSeconds(tempoEsperaEntreCliques);
 
         estaProcessando = false;
