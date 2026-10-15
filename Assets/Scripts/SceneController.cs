@@ -69,4 +69,13 @@ public class SceneController : MonoBehaviour
             Debug.Log("Resposta incorreta!");
         }
     }
+    public void PularQuestaoRecebida(int custoTrevos)
+    {
+      
+        // TODO: Chamar o Service de Trevos para descontar o 'custoTrevos' (3)
+
+        // Avança a questão usando a lógica que já existe no SceneController
+        CarregarProximaQuestaoFluxo();
+        modal.Ocultar();
+    }
 }
