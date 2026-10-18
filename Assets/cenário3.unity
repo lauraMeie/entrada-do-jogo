@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 205159900}
   - component: {fileID: 205159901}
   - component: {fileID: 205159902}
+  - component: {fileID: 205159903}
   m_Layer: 0
   m_Name: fase vale das plantas venenosas
   m_TagString: Untagged
@@ -426,6 +427,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
   escalaHover: 1.1
   velocidadeHover: 8
+--- !u!114 &205159903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205159899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee9df8b7065a894dbed333c45750c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AvisoFase
+  prefabAviso: {fileID: 0}
 --- !u!1 &236795760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1289,7 @@ GameObject:
   - component: {fileID: 795904008}
   - component: {fileID: 795904009}
   - component: {fileID: 795904010}
+  - component: {fileID: 795904011}
   m_Layer: 0
   m_Name: fase montanha da tempestade
   m_TagString: Untagged
@@ -1372,6 +1387,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
   escalaHover: 1.1
   velocidadeHover: 8
+--- !u!114 &795904011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795904007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee9df8b7065a894dbed333c45750c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AvisoFase
+  prefabAviso: {fileID: 0}
 --- !u!1 &856346398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1689,7 @@ GameObject:
   - component: {fileID: 968483401}
   - component: {fileID: 968483402}
   - component: {fileID: 968483403}
+  - component: {fileID: 968483404}
   m_Layer: 0
   m_Name: fase floresta dos lobos cinzentos
   m_TagString: Untagged
@@ -1758,6 +1787,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
   escalaHover: 1.1
   velocidadeHover: 8
+--- !u!114 &968483404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968483400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee9df8b7065a894dbed333c45750c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AvisoFase
+  prefabAviso: {fileID: 0}
 --- !u!1 &1448054410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +1943,7 @@ GameObject:
   - component: {fileID: 1521848673}
   - component: {fileID: 1521848674}
   - component: {fileID: 1521848675}
+  - component: {fileID: 1521848676}
   m_Layer: 0
   m_Name: fase zona da grande queda
   m_TagString: Untagged
@@ -1998,6 +2041,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
   escalaHover: 1.1
   velocidadeHover: 8
+--- !u!114 &1521848676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521848672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee9df8b7065a894dbed333c45750c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AvisoFase
+  prefabAviso: {fileID: 0}
 --- !u!1 &1872257901
 GameObject:
   m_ObjectHideFlags: 0
