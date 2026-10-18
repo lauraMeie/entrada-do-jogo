@@ -50,4 +50,13 @@ public class MenuBotoes : MonoBehaviour
             GameManager.Instance.AbrirFaseValeDasPlantasVenenosas();
         }
     }
+
+    public void OnClickBotaoSairFase()
+    {
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.AbrirCenario3();
+        }
+    }
 }
