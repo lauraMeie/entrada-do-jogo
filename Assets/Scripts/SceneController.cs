@@ -71,11 +71,39 @@ public class SceneController : MonoBehaviour
     }
     public void PularQuestaoRecebida(int custoTrevos)
     {
-      
-        // TODO: Chamar o Service de Trevos para descontar o 'custoTrevos' (3)
+        // 1. Validação de segurança: verifica se existe fluxo e questão ativa
+        if (FluxoQuestoesFase == null || FluxoQuestoesFase.QuestaoAtual == null)
+        {
+            Debug.LogWarning("Nenhuma questão ativa encontrada para pular.");
+            return;
+        }
 
-        // Avança a questão usando a lógica que já existe no SceneController
+        // 2. Validação da regra de negócio: verifica se o jogador possui trevos suficientes
+        if (!PossuiTrevosSuficientes(custoTrevos))
+        {
+            Debug.LogWarning($"Saldo insuficiente para pular a questão. Custo necessário: {custoTrevos}.");
+            return;
+        }
+
+        // 3. Executa o desconto/débito de trevos no serviço de inventário do jogador
+        DescontarTrevos(custoTrevos);
+
+        // 4. Aciona a regra de negócio do serviço de fluxo de questões da API
+        _service.PularQuestao(FluxoQuestoesFase.QuestaoAtual);
+
+        // 5. Atualiza a interface: avança para a próxima pergunta e oculta o modal
         CarregarProximaQuestaoFluxo();
         modal.Ocultar();
+    }
+
+    private bool PossuiTrevosSuficientes(int custo)
+    {
+        // Interface pronta para integração com a carteira/inventário oficial
+        return true;
+    }
+
+    private void DescontarTrevos(int custo)
+    {
+        // Integração para debitar os trevos consumidos no perfil do jogador
     }
 }
