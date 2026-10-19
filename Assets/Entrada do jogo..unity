@@ -842,6 +842,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7367732986325244202, guid: 82dd9e439fc299a498bd22c184072209, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8733722376524982987, guid: 82dd9e439fc299a498bd22c184072209, type: 3}
       propertyPath: m_SortingOrder
       value: 9
