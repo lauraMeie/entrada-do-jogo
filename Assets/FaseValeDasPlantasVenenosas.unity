@@ -794,6 +794,7 @@ GameObject:
   - component: {fileID: 892293061}
   - component: {fileID: 892293060}
   - component: {fileID: 892293059}
+  - component: {fileID: 892293062}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1182,8 +1183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475f11c52f4e46f49a2a3f6f8f5bd8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
-  modalQuestoes: {fileID: 0}
-  capitulo: 0
+  modalQuestoes: {fileID: 3886768616248185670, guid: 36e8ed3b2ac48d141abf30ffbfa391d4, type: 3}
+  capitulo: 2
 --- !u!4 &2081555059
 Transform:
   m_ObjectHideFlags: 0

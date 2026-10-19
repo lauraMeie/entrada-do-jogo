@@ -1,44 +1,65 @@
 using AventuraMatemagicaAPI.ModalQuestoes.Models;
 using AventuraMatemagicaAPI.ModalQuestoes.Repository;
 using AventuraMatemagicaAPI.ModalQuestoes.Services;
+using System;
 using System.Threading;
 using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
     [SerializeField]
-    private ModalQuestoes modalQuestoes;
+    private ModalQuestoes ModalQuestoes;
     [SerializeField]
-    private int capitulo;
-    private ModalQuestoes modal;
+    private int Capitulo;
+    [SerializeField]
+    private TempoFase TemporizadorPrefab;
+    private SaidaFaseController SaidaFaseController;
+    private ModalQuestoes Modal;
+    private TempoFase Temporizador;
     private FluxoQuestoesFaseService _service;
     private FluxoQuestoesFase FluxoQuestoesFase;
-
     private void Start()
     {
         _service = new FluxoQuestoesFaseService(
             new QuestaoService(
                 new QuestaoRepository()));
         if (FluxoQuestoesFase == null)
-            FluxoQuestoesFase = _service.GeraFluxo(capitulo);
+            FluxoQuestoesFase = _service.GeraFluxo(Capitulo);
         InicializarModal();
-        modal.AoOcultar += AoOcultarModal;
+        InicializarTemporizador();
+        Modal.AoOcultar += AoOcultarModal;
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
             CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
         }
+        ConectarSaidaFaseController();
     }
+    private void ConectarSaidaFaseController()
+    {
+        if (SaidaFaseController != null) return;
+
+        SaidaFaseController = FindAnyObjectByType<SaidaFaseController>(
+            FindObjectsInactive.Include
+        );
+        if (SaidaFaseController == null)
+        {
+            return;
+        }
+    }
+
+    #region Modal de Questões
 
     private void InicializarModal()
     {
-        modal = Instantiate(modalQuestoes);
-        modal.RespostaSelecionada += TratarRespostaSelecionada;
-        modal.Ocultar();
+        Modal = Instantiate(ModalQuestoes);
+        Modal.RespostaSelecionada += TratarRespostaSelecionada;
+        Modal.Ocultar();
     }
     private void AoOcultarModal()
     {
         StartCoroutine(proximaQuestaoTeste());
     }
+
     private System.Collections.IEnumerator proximaQuestaoTeste()
     {
         yield return null;
@@ -51,7 +72,7 @@ public class SceneController : MonoBehaviour
     }
     public void CarregarQuestaoModal(Questao questao)
     {
-        modal.Exibir(questao);
+        Modal.Exibir(questao);
     }
     public void CarregarProximaQuestaoFluxo()
     {
@@ -59,16 +80,33 @@ public class SceneController : MonoBehaviour
     }
     private void TratarRespostaSelecionada(Alternativa alternativa)
     {
-        if(alternativa.Correta)
+        if (alternativa.Correta)
         {
             CarregarProximaQuestaoFluxo();
-            modal.Ocultar();
+            Modal.Ocultar();
         }
         else
         {
             Debug.Log("Resposta incorreta!");
         }
     }
+
+    #endregion
+
+    #region Temporizador
+    private void InicializarTemporizador()
+    {
+        Temporizador = Instantiate(TemporizadorPrefab);
+        Temporizador.AoTempoEsgotado += TempoAcabou;
+    }
+
+    private void TempoAcabou()
+    {
+        SaidaFaseController.TempoAcabou();
+    }
+    #endregion
+
+    #region Pular Questão
     public void PularQuestaoRecebida(int custoTrevos)
     {
         // 1. Validação de segurança: verifica se existe fluxo e questão ativa
@@ -93,9 +131,11 @@ public class SceneController : MonoBehaviour
 
         // 5. Atualiza a interface: avança para a próxima pergunta e oculta o modal
         CarregarProximaQuestaoFluxo();
-        modal.Ocultar();
+        Modal.Ocultar();
     }
+    #endregion
 
+    #region Trevos
     private bool PossuiTrevosSuficientes(int custo)
     {
         // Interface pronta para integração com a carteira/inventário oficial
@@ -106,4 +146,5 @@ public class SceneController : MonoBehaviour
     {
         // Integração para debitar os trevos consumidos no perfil do jogador
     }
+    #endregion
 }
