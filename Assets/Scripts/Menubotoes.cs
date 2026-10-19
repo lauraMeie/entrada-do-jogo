@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MenuBotoes : MonoBehaviour
 {
-   
+
     public void OnClickPlay()
     {
         if (GameManager.Instance != null)
@@ -48,6 +48,13 @@ public class MenuBotoes : MonoBehaviour
         if (GameManager.Instance != null)
         {
             GameManager.Instance.AbrirFaseValeDasPlantasVenenosas();
+        }
+    }
+    public void OnClickCenárioFinal()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.AbrirCenárioFinal();
         }
     }
 }

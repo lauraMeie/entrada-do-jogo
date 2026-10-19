@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 15a263a9a7246514ea7a015c1c308683
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3858341716130518071
+    second: Ornate Wooden Gold Arrow Icon_0
+  - first:
+      213: 1441823422517367770
+    second: Ornate Wooden Gold Arrow Icon_1
+  - first:
+      213: 7914168166472024105
+    second: Ornate Wooden Gold Arrow Icon_2
+  - first:
+      213: -2213238123610207891
+    second: Ornate Wooden Gold Arrow Icon_3
+  - first:
+      213: -1558237307339769163
+    second: Ornate Wooden Gold Arrow Icon_4
+  - first:
+      213: -8986623969550693712
+    second: Ornate Wooden Gold Arrow Icon_5
+  - first:
+      213: 8345383364018403979
+    second: Ornate Wooden Gold Arrow Icon_6
+  - first:
+      213: -3024872982268701294
+    second: Ornate Wooden Gold Arrow Icon_7
+  - first:
+      213: 1651679268746669706
+    second: Ornate Wooden Gold Arrow Icon_8
+  - first:
+      213: 358849057826469170
+    second: Ornate Wooden Gold Arrow Icon_9
+  - first:
+      213: -2789639953836834808
+    second: Ornate Wooden Gold Arrow Icon_10
+  - first:
+      213: -3927164898252607657
+    second: Ornate Wooden Gold Arrow Icon_11
+  - first:
+      213: 1201897236353421422
+    second: Ornate Wooden Gold Arrow Icon_12
+  - first:
+      213: -8412051099352824822
+    second: Ornate Wooden Gold Arrow Icon_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 1225
+        height: 1170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb28fbc6aa647ac0800000000000000
+      internalID: -3858341716130518071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_1
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1124
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad35cff73c2620410800000000000000
+      internalID: 1441823422517367770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_2
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1124
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920054f2406c4dd60800000000000000
+      internalID: 7914168166472024105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_3
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 972
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d698cde17aff841e0800000000000000
+      internalID: -2213238123610207891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 409
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba7044cc67006ae0800000000000000
+      internalID: -1558237307339769163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 355
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba8be4ec19194380800000000000000
+      internalID: -8986623969550693712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 248
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a75ce24f1c0d370800000000000000
+      internalID: 8345383364018403979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_7
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 236
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29592319c0e7506d0800000000000000
+      internalID: -3024872982268701294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_8
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 248
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ea5804b81fbe610800000000000000
+      internalID: 1651679268746669706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_9
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 244
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235fabb1153eaf400800000000000000
+      internalID: 358849057826469170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_10
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 240
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800815cfd353949d0800000000000000
+      internalID: -2789639953836834808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_11
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 224
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f25410558ef79c0800000000000000
+      internalID: -3927164898252607657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_12
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 232
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e609e552b2ffda010800000000000000
+      internalID: 1201897236353421422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ornate Wooden Gold Arrow Icon_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 214
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0404a61814624b80800000000000000
+      internalID: -8412051099352824822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ornate Wooden Gold Arrow Icon_0: -3858341716130518071
+      Ornate Wooden Gold Arrow Icon_1: 1441823422517367770
+      Ornate Wooden Gold Arrow Icon_10: -2789639953836834808
+      Ornate Wooden Gold Arrow Icon_11: -3927164898252607657
+      Ornate Wooden Gold Arrow Icon_12: 1201897236353421422
+      Ornate Wooden Gold Arrow Icon_13: -8412051099352824822
+      Ornate Wooden Gold Arrow Icon_2: 7914168166472024105
+      Ornate Wooden Gold Arrow Icon_3: -2213238123610207891
+      Ornate Wooden Gold Arrow Icon_4: -1558237307339769163
+      Ornate Wooden Gold Arrow Icon_5: -8986623969550693712
+      Ornate Wooden Gold Arrow Icon_6: 8345383364018403979
+      Ornate Wooden Gold Arrow Icon_7: -3024872982268701294
+      Ornate Wooden Gold Arrow Icon_8: 1651679268746669706
+      Ornate Wooden Gold Arrow Icon_9: 358849057826469170
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

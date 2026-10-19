@@ -12,9 +12,9 @@ namespace AventuraMatemagicaAPI.ModalQuestoes.Repository
             throw new NotImplementedException();
         }
 
-        internal List<Questao> GetAll()
+        internal async Task<List<Questao>> GetAll()
         {
-            return ModalQuestoesMock.GetQuestoes();
+            throw new NotImplementedException();
         }
     }
 }
