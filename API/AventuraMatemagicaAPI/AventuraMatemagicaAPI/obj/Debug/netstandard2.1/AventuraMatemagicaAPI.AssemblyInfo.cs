@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AventuraMatemagicaAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9200d61cdf21a233acc1b706beeb413cc3d70ef1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63a599162fae10de5df259a133d986fa03ebe9f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("AventuraMatemagicaAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AventuraMatemagicaAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

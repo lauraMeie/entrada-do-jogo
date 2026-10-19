@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: a0984b9f773f2b643a4a2c1173d1893a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8596820642791026628
+    second: "Bot\xE3o Sair de Madeira com Folhagens_0"
+  - first:
+      213: 2627621175756214732
+    second: "Bot\xE3o Sair de Madeira com Folhagens_1"
+  - first:
+      213: 7502265215518335895
+    second: "Bot\xE3o Sair de Madeira com Folhagens_2"
+  - first:
+      213: 3108817378276092136
+    second: "Bot\xE3o Sair de Madeira com Folhagens_3"
+  - first:
+      213: 6187349744202581157
+    second: "Bot\xE3o Sair de Madeira com Folhagens_4"
+  - first:
+      213: -7734522376370237086
+    second: "Bot\xE3o Sair de Madeira com Folhagens_5"
+  - first:
+      213: 4520637068625479106
+    second: "Bot\xE3o Sair de Madeira com Folhagens_6"
+  - first:
+      213: 4637265511646695394
+    second: "Bot\xE3o Sair de Madeira com Folhagens_7"
+  - first:
+      213: 7849975602127954823
+    second: "Bot\xE3o Sair de Madeira com Folhagens_8"
+  - first:
+      213: 2917781792642929358
+    second: "Bot\xE3o Sair de Madeira com Folhagens_9"
+  - first:
+      213: 5997322768583167529
+    second: "Bot\xE3o Sair de Madeira com Folhagens_10"
+  - first:
+      213: -1306469401255171583
+    second: "Bot\xE3o Sair de Madeira com Folhagens_11"
+  - first:
+      213: -7235572190640897038
+    second: "Bot\xE3o Sair de Madeira com Folhagens_12"
+  - first:
+      213: 7594645761613489449
+    second: "Bot\xE3o Sair de Madeira com Folhagens_13"
+  - first:
+      213: -1115784610868608819
+    second: "Bot\xE3o Sair de Madeira com Folhagens_14"
+  - first:
+      213: 1795152631874529391
+    second: "Bot\xE3o Sair de Madeira com Folhagens_15"
+  - first:
+      213: -5752989221665881726
+    second: "Bot\xE3o Sair de Madeira com Folhagens_16"
+  - first:
+      213: -536940536596495678
+    second: "Bot\xE3o Sair de Madeira com Folhagens_17"
+  - first:
+      213: 8436912633893274292
+    second: "Bot\xE3o Sair de Madeira com Folhagens_18"
+  - first:
+      213: -6357238992037046098
+    second: "Bot\xE3o Sair de Madeira com Folhagens_19"
+  - first:
+      213: -3884044760863760233
+    second: "Bot\xE3o Sair de Madeira com Folhagens_20"
+  - first:
+      213: -531393365548196748
+    second: "Bot\xE3o Sair de Madeira com Folhagens_21"
+  - first:
+      213: 1604599312022601780
+    second: "Bot\xE3o Sair de Madeira com Folhagens_22"
+  - first:
+      213: 7301437278471151788
+    second: "Bot\xE3o Sair de Madeira com Folhagens_23"
+  - first:
+      213: 1904809128697607094
+    second: "Bot\xE3o Sair de Madeira com Folhagens_24"
+  - first:
+      213: 5894167428191314117
+    second: "Bot\xE3o Sair de Madeira com Folhagens_25"
+  - first:
+      213: 4951223208816082514
+    second: "Bot\xE3o Sair de Madeira com Folhagens_26"
+  - first:
+      213: -2291304803627408307
+    second: "Bot\xE3o Sair de Madeira com Folhagens_27"
+  - first:
+      213: 7692610821798317711
+    second: "Bot\xE3o Sair de Madeira com Folhagens_28"
+  - first:
+      213: -5940866713943086351
+    second: "Bot\xE3o Sair de Madeira com Folhagens_29"
+  - first:
+      213: -3953425184438636671
+    second: "Bot\xE3o Sair de Madeira com Folhagens_30"
+  - first:
+      213: -5780736329702577817
+    second: "Bot\xE3o Sair de Madeira com Folhagens_31"
+  - first:
+      213: 9012162797448720891
+    second: "Bot\xE3o Sair de Madeira com Folhagens_32"
+  - first:
+      213: 8315279648343591305
+    second: "Bot\xE3o Sair de Madeira com Folhagens_33"
+  - first:
+      213: -8658126876638068795
+    second: "Bot\xE3o Sair de Madeira com Folhagens_34"
+  - first:
+      213: -4140428850394268426
+    second: "Bot\xE3o Sair de Madeira com Folhagens_35"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 1492
+        height: 941
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3012bc5c25f1b880800000000000000
+      internalID: -8596820642791026628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_1"
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 949
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc15e31a98f277420800000000000000
+      internalID: 2627621175756214732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_2"
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 945
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7936dbdf6766d1860800000000000000
+      internalID: 7502265215518335895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_3"
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 791
+        width: 17
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e825bf2fecb42b20800000000000000
+      internalID: 3108817378276092136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_4"
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 903
+        width: 137
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a48c447fc1edd550800000000000000
+      internalID: 6187349744202581157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_5"
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 927
+        width: 169
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2615421c0e479a490800000000000000
+      internalID: -7734522376370237086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_6"
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 875
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c582e966778cbe30800000000000000
+      internalID: 4520637068625479106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_7"
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 867
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef0fded960ea5040800000000000000
+      internalID: 4637265511646695394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_8"
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 863
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783e15c1837b0fc60800000000000000
+      internalID: 7849975602127954823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_9"
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 865
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec29592d41b0e7820800000000000000
+      internalID: 2917781792642929358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_10"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 813
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e03c86845ca3350800000000000000
+      internalID: 5997322768583167529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_11"
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 835
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10aa444600d7edde0800000000000000
+      internalID: -1306469401255171583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_12"
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 833
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f38726ad65169b90800000000000000
+      internalID: -7235572190640897038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_13"
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 836
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925e5eff41a956960800000000000000
+      internalID: 7594645761613489449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_14"
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 824
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0445fdecfe380f0800000000000000
+      internalID: -1115784610868608819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_15"
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 823
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f682d7cbec9a9e810800000000000000
+      internalID: 1795152631874529391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_16"
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 783
+        width: 79
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28144f598c64920b0800000000000000
+      internalID: -5752989221665881726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_17"
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 800
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c288a24d676c88f0800000000000000
+      internalID: -536940536596495678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_18"
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 783
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2c630075fe51570800000000000000
+      internalID: 8436912633893274292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_19"
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 741
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea89e5f91dc86c7a0800000000000000
+      internalID: -6357238992037046098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_20"
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 701
+        width: 49
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790aff85ed9191ac0800000000000000
+      internalID: -3884044760863760233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_21"
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 641
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c108aac8c10a8f0800000000000000
+      internalID: -531393365548196748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_22"
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 691
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43081ff929ea44610800000000000000
+      internalID: 1604599312022601780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_23"
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 355
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca06115258ae35560800000000000000
+      internalID: 7301437278471151788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_24"
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 335
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b331f87fcd3f6a10800000000000000
+      internalID: 1904809128697607094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_25"
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 319
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0650c1c0a4cc150800000000000000
+      internalID: 5894167428191314117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_26"
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 290
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ef625964746b440800000000000000
+      internalID: 4951223208816082514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_27"
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 269
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4464a3cb66a330e0800000000000000
+      internalID: -2291304803627408307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_28"
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 237
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e4d9409c4a1ca60800000000000000
+      internalID: 7692610821798317711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_29"
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 223
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1faea71233dcd8da0800000000000000
+      internalID: -5940866713943086351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_30"
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 229
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fa37badbc9229c0800000000000000
+      internalID: -3953425184438636671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_31"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 197
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769e1ef8fe2b6cfa0800000000000000
+      internalID: -5780736329702577817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_32"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 215
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1fbe7d052a11d70800000000000000
+      internalID: 9012162797448720891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_33"
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 197
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9890e8fa8cec56370800000000000000
+      internalID: 8315279648343591305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_34"
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 199
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfb9b97a7728d780800000000000000
+      internalID: -8658126876638068795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sair de Madeira com Folhagens_35"
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 159
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc7872c5ed3a86c0800000000000000
+      internalID: -4140428850394268426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Bot\xE3o Sair de Madeira com Folhagens_0": -8596820642791026628
+      "Bot\xE3o Sair de Madeira com Folhagens_1": 2627621175756214732
+      "Bot\xE3o Sair de Madeira com Folhagens_10": 5997322768583167529
+      "Bot\xE3o Sair de Madeira com Folhagens_11": -1306469401255171583
+      "Bot\xE3o Sair de Madeira com Folhagens_12": -7235572190640897038
+      "Bot\xE3o Sair de Madeira com Folhagens_13": 7594645761613489449
+      "Bot\xE3o Sair de Madeira com Folhagens_14": -1115784610868608819
+      "Bot\xE3o Sair de Madeira com Folhagens_15": 1795152631874529391
+      "Bot\xE3o Sair de Madeira com Folhagens_16": -5752989221665881726
+      "Bot\xE3o Sair de Madeira com Folhagens_17": -536940536596495678
+      "Bot\xE3o Sair de Madeira com Folhagens_18": 8436912633893274292
+      "Bot\xE3o Sair de Madeira com Folhagens_19": -6357238992037046098
+      "Bot\xE3o Sair de Madeira com Folhagens_2": 7502265215518335895
+      "Bot\xE3o Sair de Madeira com Folhagens_20": -3884044760863760233
+      "Bot\xE3o Sair de Madeira com Folhagens_21": -531393365548196748
+      "Bot\xE3o Sair de Madeira com Folhagens_22": 1604599312022601780
+      "Bot\xE3o Sair de Madeira com Folhagens_23": 7301437278471151788
+      "Bot\xE3o Sair de Madeira com Folhagens_24": 1904809128697607094
+      "Bot\xE3o Sair de Madeira com Folhagens_25": 5894167428191314117
+      "Bot\xE3o Sair de Madeira com Folhagens_26": 4951223208816082514
+      "Bot\xE3o Sair de Madeira com Folhagens_27": -2291304803627408307
+      "Bot\xE3o Sair de Madeira com Folhagens_28": 7692610821798317711
+      "Bot\xE3o Sair de Madeira com Folhagens_29": -5940866713943086351
+      "Bot\xE3o Sair de Madeira com Folhagens_3": 3108817378276092136
+      "Bot\xE3o Sair de Madeira com Folhagens_30": -3953425184438636671
+      "Bot\xE3o Sair de Madeira com Folhagens_31": -5780736329702577817
+      "Bot\xE3o Sair de Madeira com Folhagens_32": 9012162797448720891
+      "Bot\xE3o Sair de Madeira com Folhagens_33": 8315279648343591305
+      "Bot\xE3o Sair de Madeira com Folhagens_34": -8658126876638068795
+      "Bot\xE3o Sair de Madeira com Folhagens_35": -4140428850394268426
+      "Bot\xE3o Sair de Madeira com Folhagens_4": 6187349744202581157
+      "Bot\xE3o Sair de Madeira com Folhagens_5": -7734522376370237086
+      "Bot\xE3o Sair de Madeira com Folhagens_6": 4520637068625479106
+      "Bot\xE3o Sair de Madeira com Folhagens_7": 4637265511646695394
+      "Bot\xE3o Sair de Madeira com Folhagens_8": 7849975602127954823
+      "Bot\xE3o Sair de Madeira com Folhagens_9": 2917781792642929358
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

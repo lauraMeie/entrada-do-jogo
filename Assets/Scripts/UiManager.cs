@@ -27,10 +27,12 @@ public class UiManager : MonoBehaviour
         if (System.Array.Exists(ScenesWithoutHUD, element => element.ToLower().Normalize() == scene.name.ToLower().Normalize()))
         {
             DisableHUD();
+            
         }
         else
         {
             EnableHUD();
+            
         }
     }
 
@@ -45,7 +47,7 @@ public class UiManager : MonoBehaviour
             currentHUD.SetActive(true);
         }
     }
-
+    
     private void DisableHUD()
     {
         if (currentHUD != null)
