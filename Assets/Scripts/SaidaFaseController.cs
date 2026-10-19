@@ -7,40 +7,26 @@ public class SaidaFaseController : MonoBehaviour
     [SerializeField] private GameObject cardTempoEsgotado;
     [SerializeField] private GameObject cardVitoria;
     [SerializeField] private GameObject fundoEscuro;
-
-    [SerializeField] private TempoFase temporizador;
-    [SerializeField] private TipoFase faseAtual;//diz qual é a fase para posteriormente desbloquear a chave para proxima fase 
-    private ConclusaoFaseTeste conclusaoTeste; //teste de respostas para card de respostas corretas
-
-
+    [SerializeField] private TipoFase faseAtual;//diz qual é a fase para posteriormente desbloquear a chave para proxima fase
     private bool faseFinalizada = false;
 
+    public static SaidaFaseController Instance { get; private set; }
+
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         EsconderSaida();
-        ConectarTemporizador();
-        ConectarConclusao();
-
-
-    }
-
-    void Update()
-    {
-        if (temporizador == null)
-        {
-            ConectarTemporizador();
-        }
-    }
-    void OnDestroy()
-{
-    if (temporizador != null)
-    {
-        temporizador.AoTempoEsgotado -= TempoAcabou;
-    }
-        if (conclusaoTeste != null)
-        {
-            conclusaoTeste.AoTodasRespostasCorretas -= FaseConcluida;
-        }
     }
 
 public void TempoAcabou()
@@ -53,7 +39,7 @@ public void TempoAcabou()
         cardTempoEsgotado.SetActive(true);
     }
 
-    public void FaseConcluida()
+    public void FaseConcluida(TempoFase temporizador)
     {
         if (faseFinalizada) return;
 
@@ -79,33 +65,4 @@ public void TempoAcabou()
         cardTempoEsgotado.SetActive(false);
         cardVitoria.SetActive(false);
     }
-
-    private void ConectarTemporizador()
-    {
-        if (temporizador != null) return;
-
-        temporizador = FindAnyObjectByType<TempoFase>(
-            FindObjectsInactive.Include
-        );
-
-        if (temporizador == null)
-        {
-            return;
-        }
-
-        temporizador.AoTempoEsgotado += TempoAcabou;
-    }
-    private void ConectarConclusao()
-    {
-        conclusaoTeste = FindAnyObjectByType<ConclusaoFaseTeste>();
-
-        if (conclusaoTeste == null)
-        {
-            Debug.LogWarning("Evento de conclusão não encontrado!");
-            return;
-        }
-
-        conclusaoTeste.AoTodasRespostasCorretas += FaseConcluida;
-    }
-
 }

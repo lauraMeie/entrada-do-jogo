@@ -59,4 +59,9 @@ public class TempoFase : MonoBehaviour
         time = 0f;
         AtualizarTexto();
     }
+
+    public TimeSpan GetTempoAtual()
+    {
+        return TimeSpan.FromSeconds(time);
+    }
 }
