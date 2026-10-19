@@ -8,8 +8,7 @@ namespace AventuraMatemagicaAPI.ModalQuestoes.Models
     {
         public int CodAlternativa {  get; set; }
         public int CodQuestão { get; set; }
-        public string Letra { get; set; }
-        public string Descricao { get; set; }
+        public string Value { get; set; }
         public bool Correta { get; set; }
         public Questao Questao { get; set; }
     }

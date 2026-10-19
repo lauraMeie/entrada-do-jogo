@@ -1,4 +1,3 @@
-using AventuraMatemagicaAPI;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,28 +22,28 @@ public class GameManager : MonoBehaviour
 
     public void AbrirEscolhaPersonagem()
     {
-        SceneManager.LoadScene(Utils.GetScenesFromEnum(scenes.selecaoPersonagem));
+        SceneManager.LoadScene("cenário2");
     }
 
     public void IniciarJogo()
     {
-        SceneManager.LoadScene(Utils.GetScenesFromEnum(scenes.mapaPrincipal));
+        SceneManager.LoadScene("cenário3");
     }
     public void AbrirFaseZonaDosLobosCinzentos()
     {
-        SceneManager.LoadScene(Utils.GetScenesFromEnum(scenes.zonaDosLobosCinzentos));
+        SceneManager.LoadScene("FaseZonaDosLobosCinzentos");
     }
 
     public void AbrirFaseZonaDaGrandeQueda()
     {
-        SceneManager.LoadScene(Utils.GetScenesFromEnum(scenes.zonaDaGrandeQueda));
+        SceneManager.LoadScene("FaseZonaDaGrandeQueda");
     }
     public void AbrirFaseMontanhaDaTempestade()
     {
-        SceneManager.LoadScene(Utils.GetScenesFromEnum(scenes.montanhaDaTempestade));
+        SceneManager.LoadScene("FaseMontanhaDaTempestade");
     }
     public void AbrirFaseValeDasPlantasVenenosas()
     {
-        SceneManager.LoadScene(Utils.GetScenesFromEnum(scenes.valeDasPlantasVenenosas));
+        SceneManager.LoadScene("FaseValeDasPlantasVenenosas");
     }
 }
