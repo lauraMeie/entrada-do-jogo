@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TMPro;
 
@@ -5,6 +6,8 @@ public class TempoFase : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI tempoText;
     [SerializeField] float tempoMaximo = 300f;
+
+    public event Action AoTempoEsgotado;
 
     float time;
     bool rodando = true;
@@ -22,6 +25,7 @@ public class TempoFase : MonoBehaviour
         {
             time = tempoMaximo;
             rodando = false;
+            AoTempoEsgotado?.Invoke();
         }
 
         int minutos = Mathf.FloorToInt(time / 60f);
@@ -39,7 +43,7 @@ public class TempoFase : MonoBehaviour
         rodando = true;
     }
 
-    void SairGame()
+    public void SairGame()
     {
         rodando = false;
         time = 0f;
