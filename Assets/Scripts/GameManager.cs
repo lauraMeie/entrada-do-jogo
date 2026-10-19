@@ -46,4 +46,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("FaseValeDasPlantasVenenosas");
     }
+
+    public void AbrirCenario3()
+    {
+        SceneManager.LoadScene("cenário3");
+    }
+
 }
