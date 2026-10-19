@@ -1,5 +1,3 @@
-
-using System;
 using UnityEngine;
 using TMPro;
 
@@ -8,16 +6,8 @@ public class TempoFase : MonoBehaviour
     [SerializeField] TextMeshProUGUI tempoText;
     [SerializeField] float tempoMaximo = 300f;
 
-    public event Action AoTempoEsgotado;
-
     float time;
     bool rodando = true;
-
-    void Start()
-    {
-        time = tempoMaximo;
-        AtualizarTexto();
-    }
 
     void Update()
     {
@@ -26,42 +16,40 @@ public class TempoFase : MonoBehaviour
             return;
         }
 
-        // Diminui o tempo a cada segundo
-        time -= Time.deltaTime;
+        time += Time.deltaTime;
 
-        if (time <= 0f)
+        if (time >= tempoMaximo)
         {
-            time = 0f;
+            time = tempoMaximo;
             rodando = false;
-
-            AtualizarTexto();
-
-            AoTempoEsgotado?.Invoke();
-            return;
         }
 
-        AtualizarTexto();
+        int minutos = Mathf.FloorToInt(time / 60f);
+        int segundos = Mathf.FloorToInt(time % 60f);
+        tempoText.text = string.Format("{0:00}:{1:00}", minutos, segundos);
     }
 
-    void AtualizarTexto()
+    void PausarGame()
     {
-        int minutos = Mathf.FloorToInt(Mathf.Ceil(time) / 60f);
-        int segundos = Mathf.CeilToInt(time) % 60;
-
-        tempoText.text = string.Format(
-            "{0:00}:{1:00}", minutos, segundos
-        );
+        rodando = false;
     }
 
-    public void SairGame()
+    void ContinuarGame()
+    {
+        rodando = true;
+    }
+
+    void SairGame()
     {
         rodando = false;
         time = 0f;
-        AtualizarTexto();
+        tempoText.text = "00:00";
     }
 
-    public TimeSpan GetTempoAtual()
+    void ReiniciarGame()
     {
-        return TimeSpan.FromSeconds(time);
+        rodando = true;
+        time = 0f;
+        tempoText.text = "00:00";
     }
 }
