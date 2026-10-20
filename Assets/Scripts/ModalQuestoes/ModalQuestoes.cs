@@ -45,7 +45,6 @@ public class ModalQuestoes : MonoBehaviour
             button.OnAlternativaSelecionada -= TratarAlternativaSelecionada;
         }
         //PularQuestaoButton.OnPulouQuestao -= PularQuestao;
-        AoOcultar?.Invoke();
     }
     private void TratarAlternativaSelecionada(ModalQuestoesButton button)
     {
@@ -80,6 +79,7 @@ public class ModalQuestoes : MonoBehaviour
     public void Ocultar()
     {
         gameObject.SetActive(false);
+        AoOcultar?.Invoke();
     }
     public void Exibir(Questao questao)
     {

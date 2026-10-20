@@ -59,4 +59,9 @@ public class MenuBotoes : MonoBehaviour
             GameManager.Instance.AbrirCenario3();
         }
     }
+
+    public void OnClickCenárioFinal()
+    {
+        GameManager.Instance.AbrirCenárioFinal();
+    }
 }

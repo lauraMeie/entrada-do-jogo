@@ -15,11 +15,14 @@ public class SceneController : MonoBehaviour
     private TempoFase TemporizadorPrefab;
     [SerializeField]
     private SaidaFaseController SaidaFaseControllerPrefab;
+    [SerializeField]
+    private TrevoManager TrevoPrefab;
     private ModalQuestoes Modal;
     private TempoFase Temporizador;
     private SaidaFaseController SaidaFaseController;
     private FluxoQuestoesFaseService _service;
     private FluxoQuestoesFase FluxoQuestoesFase;
+    private TrevoManager Trevo;
     private void Start()
     {
         _service = new FluxoQuestoesFaseService(
@@ -30,10 +33,11 @@ public class SceneController : MonoBehaviour
         InicializarModal();
         InicializarTemporizador();
         InicializarSaidaFaseController();
+        InicializarTrevo();
         Modal.AoOcultar += AoOcultarModal;
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
-            CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
+            StartCoroutine(proximaQuestaoTeste());
         }
     }
 
@@ -54,10 +58,13 @@ public class SceneController : MonoBehaviour
     {
         yield return null;
 
-        Thread.Sleep(5000);
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
             CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
+        }
+        else
+        {
+            SaidaFaseController.FaseConcluida(Temporizador);
         }
     }
     public void CarregarQuestaoModal(Questao questao)
@@ -126,6 +133,10 @@ public class SceneController : MonoBehaviour
     #endregion
 
     #region Trevos
+    private void InicializarTrevo()
+    {
+        Trevo = Instantiate(TrevoPrefab);
+    }
     private bool PossuiTrevosSuficientes(int custo)
     {
         // Interface pronta para integração com a carteira/inventário oficial

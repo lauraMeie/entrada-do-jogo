@@ -1039,6 +1039,7 @@ MonoBehaviour:
   ScenesWithoutHUD:
   - Entrada do jogo.
   - "cen\xE1rio2"
+  - "Cen\xE1rioFinal"
 --- !u!4 &1422139823
 Transform:
   m_ObjectHideFlags: 0
