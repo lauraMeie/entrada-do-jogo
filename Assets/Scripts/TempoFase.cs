@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TMPro;
 
@@ -5,6 +6,9 @@ public class TempoFase : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI tempoText;
     [SerializeField] float tempoMaximo = 300f;
+
+    // Evento necessário para avisar o SceneController que o tempo acabou
+    public event Action AoTempoEsgotado;
 
     float time;
     bool rodando = true;
@@ -22,6 +26,7 @@ public class TempoFase : MonoBehaviour
         {
             time = tempoMaximo;
             rodando = false;
+            AoTempoEsgotado?.Invoke();
         }
 
         int minutos = Mathf.FloorToInt(time / 60f);
@@ -29,24 +34,24 @@ public class TempoFase : MonoBehaviour
         tempoText.text = string.Format("{0:00}:{1:00}", minutos, segundos);
     }
 
-    void PausarGame()
+    public void PausarGame()
     {
         rodando = false;
     }
 
-    void ContinuarGame()
+    public void ContinuarGame()
     {
         rodando = true;
     }
 
-    void SairGame()
+    public void SairGame()
     {
         rodando = false;
         time = 0f;
         tempoText.text = "00:00";
     }
 
-    void ReiniciarGame()
+    public void ReiniciarGame()
     {
         rodando = true;
         time = 0f;
