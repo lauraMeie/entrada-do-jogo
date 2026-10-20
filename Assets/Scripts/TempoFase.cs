@@ -6,7 +6,7 @@ using TMPro;
 public class TempoFase : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI tempoText;
-    [SerializeField] float tempoMaximo = 300f;
+    [SerializeField] float tempoMaximo = 10f;
 
     public event Action AoTempoEsgotado;
 

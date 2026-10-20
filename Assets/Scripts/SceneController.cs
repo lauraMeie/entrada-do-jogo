@@ -13,9 +13,11 @@ public class SceneController : MonoBehaviour
     private int Capitulo;
     [SerializeField]
     private TempoFase TemporizadorPrefab;
-    private SaidaFaseController SaidaFaseController;
+    [SerializeField]
+    private SaidaFaseController SaidaFaseControllerPrefab;
     private ModalQuestoes Modal;
     private TempoFase Temporizador;
+    private SaidaFaseController SaidaFaseController;
     private FluxoQuestoesFaseService _service;
     private FluxoQuestoesFase FluxoQuestoesFase;
     private void Start()
@@ -27,23 +29,11 @@ public class SceneController : MonoBehaviour
             FluxoQuestoesFase = _service.GeraFluxo(Capitulo);
         InicializarModal();
         InicializarTemporizador();
+        InicializarSaidaFaseController();
         Modal.AoOcultar += AoOcultarModal;
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
             CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
-        }
-        ConectarSaidaFaseController();
-    }
-    private void ConectarSaidaFaseController()
-    {
-        if (SaidaFaseController != null) return;
-
-        SaidaFaseController = FindAnyObjectByType<SaidaFaseController>(
-            FindObjectsInactive.Include
-        );
-        if (SaidaFaseController == null)
-        {
-            return;
         }
     }
 
@@ -145,6 +135,13 @@ public class SceneController : MonoBehaviour
     private void DescontarTrevos(int custo)
     {
         // Integração para debitar os trevos consumidos no perfil do jogador
+    }
+    #endregion
+
+    #region Saída de Fase
+    private void InicializarSaidaFaseController()
+    {
+        SaidaFaseController = Instantiate(SaidaFaseControllerPrefab);
     }
     #endregion
 }
