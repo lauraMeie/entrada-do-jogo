@@ -14,7 +14,7 @@ public class BotaoPularQuestao : MonoBehaviour
 
     [Header("Configurações de Regra")]
 
-    [SerializeField] private int custoEmTrevos = 3;
+    [SerializeField] public int custoEmTrevos = 3;
 
     [SerializeField] private float tempoEsperaEntreCliques = 1.0f;
 
@@ -78,9 +78,6 @@ public class BotaoPularQuestao : MonoBehaviour
 
         if (botao != null) botao.interactable = false;
 
-
-
-        // Apenas dispara o evento enviando o "3". A validação ocorre fora daqui.
 
         OnQuestaoPulada?.Invoke(custoEmTrevos);
 

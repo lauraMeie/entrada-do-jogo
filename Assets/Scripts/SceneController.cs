@@ -82,6 +82,7 @@ public class SceneController : MonoBehaviour
         if (alternativa.Correta)
         {
             CarregarProximaQuestaoFluxo();
+            GanharTrevos();
             Modal.Ocultar();
         }
         else
@@ -110,6 +111,7 @@ public class SceneController : MonoBehaviour
     private void InicializarBotaoPularQuestao()
     {
         BotaoPularQuestao = Instantiate(BotaoPularQuestaoPrefab);
+        BotaoPularQuestao.OnQuestaoPulada.AddListener(PularQuestaoRecebida);
     }
     public void PularQuestaoRecebida(int custoTrevos)
     {
