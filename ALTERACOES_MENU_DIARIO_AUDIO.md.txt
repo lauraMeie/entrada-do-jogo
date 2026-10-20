@@ -1,0 +1,40 @@
+# Alterações: menu, diário e áudio
+
+Branch: menu-diario-audio
+
+## Resumo
+Melhorias no menu principal (HUD), no diário de progresso e no sistema de áudio.
+
+## O que foi feito
+
+### Menu / HUD
+- Corrigido o problema de clicar nos itens da barra (Conteúdo, Diário, Mochila, Configurações) com um painel aberto.
+  Os itens são sprites com Box Collider 2D, então o `PainelBloqueiaBarra` desliga os colliders enquanto o painel está ativo.
+- Botão de sair do jogo (`BotaoSair`).
+
+### Diário de progresso
+- Quatro cartões de nível (Lobos, Queda, Plantas, Montanha) com cadeado.
+- Nível bloqueado aparece em preto e branco (shader `UIGrayscale` + `MaterialCinza`).
+- Ao concluir a fase, o cadeado some e a imagem fica colorida (`CartaoNivel`).
+- Progresso salvo com PlayerPrefs (`Progresso`).
+
+### Áudio
+- Separação entre música de fundo e efeitos sonoros (`ConfigAudio`).
+- Botões independentes de música e efeitos (`BotaoSom`, campo Tipo).
+- Sons das fases obedecem ao botão de efeitos (`EfeitoMudo`).
+- O estado fica salvo e vale em todas as cenas.
+
+## Arquivos principais
+- Scripts: BotaoSair, BotaoSom, CartaoNivel, ConfigAudio, EfeitoMudo, PainelBloqueiaBarra, Progresso, ControleMusica
+- Shader/material: UIGrayscale, MaterialCinza
+- Prefab: HUD
+- Cenas: Entrada do jogo, FaseZonaDosLobosCinzentos
+
+## Pendências
+- Chamar `Progresso.Concluir("lobos")` (e queda, plantas, montanha) no fim de cada fase.
+- Adicionar `EfeitoMudo` nos AudioSources das outras fases.
+- Erro de merge em `LiberationSans SDF.asset` (fonte do TextMesh Pro).
+- Erro `MissingReferenceException` no SceneController (parte do amigo, ainda em desenvolvimento).
+
+## Atenção
+Foram alterados o prefab HUD e a cena de entrada. Evitar editar os mesmos arquivos ao mesmo tempo para não dar conflito.

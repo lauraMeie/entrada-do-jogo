@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MenuBotoes : MonoBehaviour
 {
-   
+
     public void OnClickPlay()
     {
         if (GameManager.Instance != null)

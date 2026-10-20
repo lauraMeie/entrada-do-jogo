@@ -1,4 +1,3 @@
-
 using System;
 using UnityEngine;
 using TMPro;
@@ -18,7 +17,6 @@ public class TempoFase : MonoBehaviour
         time = tempoMaximo;
         AtualizarTexto();
     }
-
     void Update()
     {
         if (!rodando)
@@ -43,6 +41,16 @@ public class TempoFase : MonoBehaviour
         AtualizarTexto();
     }
 
+    void PausarGame()
+    {
+        rodando = false;
+    }
+
+    void ContinuarGame()
+    {
+        rodando = true;
+    }
+
     void AtualizarTexto()
     {
         int minutos = Mathf.FloorToInt(Mathf.Ceil(time) / 60f);
@@ -52,15 +60,22 @@ public class TempoFase : MonoBehaviour
             "{0:00}:{1:00}", minutos, segundos
         );
     }
-
     public void SairGame()
     {
         rodando = false;
         time = 0f;
-        AtualizarTexto();
+        tempoText.text = "00:00";
+		AtualizarTexto();
     }
 
-    public TimeSpan GetTempoAtual()
+    void ReiniciarGame()
+    {
+        rodando = true;
+        time = 0f;
+        tempoText.text = "00:00";
+    }
+
+	public TimeSpan GetTempoAtual()
     {
         return TimeSpan.FromSeconds(time);
     }

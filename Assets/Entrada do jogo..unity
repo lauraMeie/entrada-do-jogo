@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 356007727}
   - component: {fileID: 356007726}
   - component: {fileID: 356007725}
+  - component: {fileID: 356007728}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -490,6 +491,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356007723}
   m_CullTransparentMesh: 1
+--- !u!114 &356007728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356007723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a889764c29b57049978d487554c697f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverAumentar
 --- !u!1 &840900959
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,14 +831,6 @@ PrefabInstance:
       propertyPath: MenuBotoes
       value: 
       objectReference: {fileID: 356007723}
-    - target: {fileID: 3451686085483587005, guid: 82dd9e439fc299a498bd22c184072209, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3479122530805658148, guid: 82dd9e439fc299a498bd22c184072209, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4021033900926992005, guid: 82dd9e439fc299a498bd22c184072209, type: 3}
       propertyPath: MenuBotoes
       value: 
@@ -1333,7 +1338,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.3345423
+  MinDistance: 1.7894039
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1418,7 +1423,7 @@ Transform:
   m_GameObject: {fileID: 2037076198}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.408721, y: -3.268424, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1438,9 +1443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControleMusica
   musicaFundo: {fileID: 2037076199}
-  iconeBotao: {fileID: 0}
-  iconeLigado: {fileID: -4848766278061400746, guid: b0b58843f1484ff47ac2738416964d19, type: 3}
-  iconeDesligado: {fileID: -9216542670590549029, guid: 2bf0992b9298df14580d888e16847ecc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

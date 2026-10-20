@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 32833e3d391504c4f96c5aeb2d1f9fbd
+guid: 6cecadfb15b46de4899e5b2ab04def3a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4560449094699885682
-    second: ChatGPT Image Aug 23, 2026, 09_19_39 PM_0
+      213: 8414366024688526466
+    second: Enchanted Forest Game Map_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChatGPT Image Aug 23, 2026, 09_19_39 PM_0
+      name: Enchanted Forest Game Map_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 55
-        width: 1523
-        height: 936
+        y: 0
+        width: 1670
+        height: 942
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 274a6d11a48f94f30800000000000000
-      internalID: 4560449094699885682
+      spriteID: 284eca77155d5c470800000000000000
+      internalID: 8414366024688526466
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ChatGPT Image Aug 23, 2026, 09_19_39 PM_0: 4560449094699885682
+      Enchanted Forest Game Map_0: 8414366024688526466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
