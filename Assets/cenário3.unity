@@ -1584,6 +1584,7 @@ GameObject:
   - component: {fileID: 968483406}
   - component: {fileID: 968483405}
   - component: {fileID: 968483407}
+  - component: {fileID: 968483404}
   m_Layer: 0
   m_Name: fase floresta dos lobos cinzentos
   m_TagString: Untagged
@@ -1779,6 +1780,7 @@ GameObject:
   - component: {fileID: 1521848677}
   - component: {fileID: 1521848676}
   - component: {fileID: 1521848675}
+  - component: {fileID: 1521848676}
   m_Layer: 0
   m_Name: fase zona da grande queda
   m_TagString: Untagged
@@ -1960,6 +1962,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
   escalaHover: 1.1
   velocidadeHover: 8
+--- !u!114 &1521848676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521848672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee9df8b7065a894dbed333c45750c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AvisoFase
+  prefabAviso: {fileID: 0}
 --- !u!1 &1872257901
 GameObject:
   m_ObjectHideFlags: 0
