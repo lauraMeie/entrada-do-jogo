@@ -510,111 +510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BotaoHoverUI
   escalaHover: 1.1
   velocidadeHover: 8
---- !u!1001 &686024721
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 633087908916116396, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_Name
-      value: BotaoPularQuestao
-      objectReference: {fileID: 0}
-    - target: {fileID: 7787952452952647838, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7787952452952647838, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -2.57281
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.65325
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904251335641749492, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dabf28090455d9544b5ae77422544ed3, type: 3}
 --- !u!1 &892293058
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +521,6 @@ GameObject:
   - component: {fileID: 892293061}
   - component: {fileID: 892293060}
   - component: {fileID: 892293059}
-  - component: {fileID: 892293062}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -982,8 +876,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475f11c52f4e46f49a2a3f6f8f5bd8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
-  modalQuestoes: {fileID: 3886768616248185670, guid: 36e8ed3b2ac48d141abf30ffbfa391d4, type: 3}
-  capitulo: 2
+  ModalQuestoes: {fileID: 3886768616248185670, guid: 36e8ed3b2ac48d141abf30ffbfa391d4, type: 3}
+  Capitulo: 2
+  TemporizadorPrefab: {fileID: 4902252742715701785, guid: eca47013c480a7343a37a0f98bac2ea2, type: 3}
+  SaidaFaseControllerPrefab: {fileID: 4115152369298846161, guid: 1878bc95b9cbb4c4ab9c60f1e547034e, type: 3}
+  BotaoPularQuestaoPrefab: {fileID: 8795444082990718196, guid: 2835c9e4c0e0b7a428e38ea5da32b7dd, type: 3}
 --- !u!4 &2081555059
 Transform:
   m_ObjectHideFlags: 0
@@ -1007,4 +904,4 @@ SceneRoots:
   - {fileID: 1383687568}
   - {fileID: 1337393172}
   - {fileID: 2081555059}
-  - {fileID: 686024721}
+  - {fileID: 49802453}
