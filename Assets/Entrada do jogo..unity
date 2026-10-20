@@ -503,6 +503,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a889764c29b57049978d487554c697f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverAumentar
+--- !u!1 &481660707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481660709}
+  - component: {fileID: 481660708}
+  m_Layer: 0
+  m_Name: TrevoManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &481660708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481660707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77abb9d4ba717a14ab42f619c1a9f90e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrevoManager
+--- !u!4 &481660709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481660707}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.05317, y: -0.45047, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &840900959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,3 +1502,4 @@ SceneRoots:
   - {fileID: 2037076200}
   - {fileID: 1849620341}
   - {fileID: 1422139823}
+  - {fileID: 481660709}

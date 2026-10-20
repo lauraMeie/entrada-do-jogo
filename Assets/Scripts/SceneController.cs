@@ -16,7 +16,8 @@ public class SceneController : MonoBehaviour
     [SerializeField]
     private SaidaFaseController SaidaFaseControllerPrefab;
     [SerializeField]
-    private TrevoManager TrevoPrefab;
+    private BotaoPularQuestao BotaoPularQuestaoPrefab;
+    private BotaoPularQuestao BotaoPularQuestao;
     private ModalQuestoes Modal;
     private TempoFase Temporizador;
     private SaidaFaseController SaidaFaseController;
@@ -34,6 +35,7 @@ public class SceneController : MonoBehaviour
         InicializarTemporizador();
         InicializarSaidaFaseController();
         InicializarTrevo();
+        InicializarBotaoPularQuestao();
         Modal.AoOcultar += AoOcultarModal;
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
@@ -104,6 +106,11 @@ public class SceneController : MonoBehaviour
     #endregion
 
     #region Pular Questão
+
+    private void InicializarBotaoPularQuestao()
+    {
+        BotaoPularQuestao = Instantiate(BotaoPularQuestaoPrefab);
+    }
     public void PularQuestaoRecebida(int custoTrevos)
     {
         // 1. Validação de segurança: verifica se existe fluxo e questão ativa
@@ -135,17 +142,25 @@ public class SceneController : MonoBehaviour
     #region Trevos
     private void InicializarTrevo()
     {
-        Trevo = Instantiate(TrevoPrefab);
+        if (Trevo != null) return;
+
+        Trevo = FindAnyObjectByType<TrevoManager>(
+            FindObjectsInactive.Include
+        );
     }
     private bool PossuiTrevosSuficientes(int custo)
     {
-        // Interface pronta para integração com a carteira/inventário oficial
-        return true;
+        return Trevo.TemTrevos(custo);
     }
 
     private void DescontarTrevos(int custo)
     {
-        // Integração para debitar os trevos consumidos no perfil do jogador
+        Trevo.PerderTrevo(custo);
+    }
+
+    private void GanharTrevos()
+    {
+        Trevo.GanharTrevo();
     }
     #endregion
 
