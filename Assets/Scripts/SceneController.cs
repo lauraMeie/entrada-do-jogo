@@ -13,11 +13,17 @@ public class SceneController : MonoBehaviour
     private int Capitulo;
     [SerializeField]
     private TempoFase TemporizadorPrefab;
-    private SaidaFaseController SaidaFaseController;
+    [SerializeField]
+    private SaidaFaseController SaidaFaseControllerPrefab;
+    [SerializeField]
+    private BotaoPularQuestao BotaoPularQuestaoPrefab;
+    private BotaoPularQuestao BotaoPularQuestao;
     private ModalQuestoes Modal;
     private TempoFase Temporizador;
+    private SaidaFaseController SaidaFaseController;
     private FluxoQuestoesFaseService _service;
     private FluxoQuestoesFase FluxoQuestoesFase;
+    private TrevoManager Trevo;
     private void Start()
     {
         _service = new FluxoQuestoesFaseService(
@@ -27,23 +33,13 @@ public class SceneController : MonoBehaviour
             FluxoQuestoesFase = _service.GeraFluxo(Capitulo);
         InicializarModal();
         InicializarTemporizador();
+        InicializarSaidaFaseController();
+        InicializarTrevo();
+        InicializarBotaoPularQuestao();
         Modal.AoOcultar += AoOcultarModal;
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
-            CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
-        }
-        ConectarSaidaFaseController();
-    }
-    private void ConectarSaidaFaseController()
-    {
-        if (SaidaFaseController != null) return;
-
-        SaidaFaseController = FindAnyObjectByType<SaidaFaseController>(
-            FindObjectsInactive.Include
-        );
-        if (SaidaFaseController == null)
-        {
-            return;
+            StartCoroutine(proximaQuestaoTeste());
         }
     }
 
@@ -64,10 +60,13 @@ public class SceneController : MonoBehaviour
     {
         yield return null;
 
-        Thread.Sleep(5000);
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
             CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
+        }
+        else
+        {
+            SaidaFaseController.FaseConcluida(Temporizador);
         }
     }
     public void CarregarQuestaoModal(Questao questao)
@@ -83,6 +82,7 @@ public class SceneController : MonoBehaviour
         if (alternativa.Correta)
         {
             CarregarProximaQuestaoFluxo();
+            GanharTrevos();
             Modal.Ocultar();
         }
         else
@@ -107,6 +107,12 @@ public class SceneController : MonoBehaviour
     #endregion
 
     #region Pular Questão
+
+    private void InicializarBotaoPularQuestao()
+    {
+        BotaoPularQuestao = Instantiate(BotaoPularQuestaoPrefab);
+        BotaoPularQuestao.OnQuestaoPulada.AddListener(PularQuestaoRecebida);
+    }
     public void PularQuestaoRecebida(int custoTrevos)
     {
         // 1. Validação de segurança: verifica se existe fluxo e questão ativa
@@ -136,15 +142,34 @@ public class SceneController : MonoBehaviour
     #endregion
 
     #region Trevos
+    private void InicializarTrevo()
+    {
+        if (Trevo != null) return;
+
+        Trevo = FindAnyObjectByType<TrevoManager>(
+            FindObjectsInactive.Include
+        );
+    }
     private bool PossuiTrevosSuficientes(int custo)
     {
-        // Interface pronta para integração com a carteira/inventário oficial
-        return true;
+        return Trevo.TemTrevos(custo);
     }
 
     private void DescontarTrevos(int custo)
     {
-        // Integração para debitar os trevos consumidos no perfil do jogador
+        Trevo.PerderTrevo(custo);
+    }
+
+    private void GanharTrevos()
+    {
+        Trevo.GanharTrevo();
+    }
+    #endregion
+
+    #region Saída de Fase
+    private void InicializarSaidaFaseController()
+    {
+        SaidaFaseController = Instantiate(SaidaFaseControllerPrefab);
     }
     #endregion
 }

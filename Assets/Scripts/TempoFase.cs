@@ -12,6 +12,11 @@ public class TempoFase : MonoBehaviour
     float time;
     bool rodando = true;
 
+    void Start()
+    {
+        time = tempoMaximo;
+        AtualizarTexto();
+    }
     void Update()
     {
         if (!rodando)
@@ -19,18 +24,21 @@ public class TempoFase : MonoBehaviour
             return;
         }
 
-        time += Time.deltaTime;
+        // Diminui o tempo a cada segundo
+        time -= Time.deltaTime;
 
-        if (time >= tempoMaximo)
+        if (time <= 0f)
         {
-            time = tempoMaximo;
+            time = 0f;
             rodando = false;
+
+            AtualizarTexto();
+
             AoTempoEsgotado?.Invoke();
+            return;
         }
 
-        int minutos = Mathf.FloorToInt(time / 60f);
-        int segundos = Mathf.FloorToInt(time % 60f);
-        tempoText.text = string.Format("{0:00}:{1:00}", minutos, segundos);
+        AtualizarTexto();
     }
 
     void PausarGame()
@@ -43,11 +51,21 @@ public class TempoFase : MonoBehaviour
         rodando = true;
     }
 
+    void AtualizarTexto()
+    {
+        int minutos = Mathf.FloorToInt(Mathf.Ceil(time) / 60f);
+        int segundos = Mathf.CeilToInt(time) % 60;
+
+        tempoText.text = string.Format(
+            "{0:00}:{1:00}", minutos, segundos
+        );
+    }
     public void SairGame()
     {
         rodando = false;
         time = 0f;
         tempoText.text = "00:00";
+		AtualizarTexto();
     }
 
     void ReiniciarGame()
@@ -55,5 +73,10 @@ public class TempoFase : MonoBehaviour
         rodando = true;
         time = 0f;
         tempoText.text = "00:00";
+    }
+
+	public TimeSpan GetTempoAtual()
+    {
+        return TimeSpan.FromSeconds(time);
     }
 }

@@ -52,4 +52,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("cenário3");
     }
 
+    public void AbrirCenárioFinal()
+    {
+        SceneManager.LoadScene("CenárioFinal");
+    }
+
 }

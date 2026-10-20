@@ -24,13 +24,13 @@ public class ControleMusica : MonoBehaviour
         Aplicar();
     }
 
-    void OnEnable() { ConfigAudio.Mudou += Aplicar; }
-    void OnDisable() { ConfigAudio.Mudou -= Aplicar; }
+    //void OnEnable() { ConfigAudio.Mudou += Aplicar; }
+    //void OnDisable() { ConfigAudio.Mudou -= Aplicar; }
 
     void Aplicar()
     {
-        if (musicaFundo != null)
-            musicaFundo.mute = !ConfigAudio.MusicaLigada;
+        //if (musicaFundo != null)
+            //musicaFundo.mute = !ConfigAudio.MusicaLigada;
     }
 
     public void TocarMusicaTemporaria(AudioClip novaMusica)

@@ -695,7 +695,8 @@ MonoBehaviour:
   ModalQuestoes: {fileID: 3886768616248185670, guid: 36e8ed3b2ac48d141abf30ffbfa391d4, type: 3}
   Capitulo: 1
   TemporizadorPrefab: {fileID: 4902252742715701785, guid: eca47013c480a7343a37a0f98bac2ea2, type: 3}
-  SaidaFaseController: {fileID: 0}
+  SaidaFaseControllerPrefab: {fileID: 4115152369298846161, guid: 1878bc95b9cbb4c4ab9c60f1e547034e, type: 3}
+  BotaoPularQuestaoPrefab: {fileID: 8795444082990718196, guid: 2835c9e4c0e0b7a428e38ea5da32b7dd, type: 3}
 --- !u!4 &1289505439
 Transform:
   m_ObjectHideFlags: 0
