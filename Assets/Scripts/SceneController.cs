@@ -24,6 +24,7 @@ public class SceneController : MonoBehaviour
     private FluxoQuestoesFaseService _service;
     private FluxoQuestoesFase FluxoQuestoesFase;
     private TrevoManager Trevo;
+    private TrilhaQuestoes Trilha;
     private void Start()
     {
         _service = new FluxoQuestoesFaseService(
@@ -36,6 +37,7 @@ public class SceneController : MonoBehaviour
         InicializarSaidaFaseController();
         InicializarTrevo();
         InicializarBotaoPularQuestao();
+        InicializarTrilha();
         Modal.AoOcultar += AoOcultarModal;
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
@@ -53,6 +55,7 @@ public class SceneController : MonoBehaviour
     }
     private void AoOcultarModal()
     {
+        MostrarBotaoPularQuestao(false);
         StartCoroutine(proximaQuestaoTeste());
     }
 
@@ -62,16 +65,24 @@ public class SceneController : MonoBehaviour
 
         if (FluxoQuestoesFase.QuestaoAtual != null)
         {
-            CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
+            // Com trilha: o boneco precisa andar até o ponto antes da pergunta abrir.
+            if (Trilha != null)
+                Trilha.LiberarProximoPonto();
+            else
+                CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
         }
         else
         {
-            SaidaFaseController.FaseConcluida(Temporizador);
+            if (Trilha != null)
+                Trilha.IrParaSaida(() => SaidaFaseController.FaseConcluida(Temporizador));
+            else
+                SaidaFaseController.FaseConcluida(Temporizador);
         }
     }
     public void CarregarQuestaoModal(Questao questao)
     {
         Modal.Exibir(questao);
+        MostrarBotaoPularQuestao(true);
     }
     public void CarregarProximaQuestaoFluxo()
     {
@@ -102,7 +113,19 @@ public class SceneController : MonoBehaviour
 
     private void TempoAcabou()
     {
+        if (Trilha != null) Trilha.Bloquear();
+        MostrarBotaoPularQuestao(false);
         SaidaFaseController.TempoAcabou();
+    }
+    #endregion
+
+    #region Trilha (personagem andando entre os pontos)
+    private void InicializarTrilha()
+    {
+        // Só existe nas fases configuradas em ConfigTrilhas; nas outras, Trilha fica null.
+        Trilha = TrilhaQuestoes.Criar();
+        if (Trilha != null)
+            Trilha.ChegouNoPonto += () => CarregarQuestaoModal(FluxoQuestoesFase.QuestaoAtual);
     }
     #endregion
 
@@ -112,6 +135,14 @@ public class SceneController : MonoBehaviour
     {
         BotaoPularQuestao = Instantiate(BotaoPularQuestaoPrefab);
         BotaoPularQuestao.OnQuestaoPulada.AddListener(PularQuestaoRecebida);
+        // Só aparece junto com a pergunta (CarregarQuestaoModal / AoOcultarModal).
+        MostrarBotaoPularQuestao(false);
+    }
+
+    private void MostrarBotaoPularQuestao(bool visivel)
+    {
+        if (BotaoPularQuestao != null)
+            BotaoPularQuestao.transform.root.gameObject.SetActive(visivel);
     }
     public void PularQuestaoRecebida(int custoTrevos)
     {
