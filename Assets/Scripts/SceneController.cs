@@ -55,6 +55,7 @@ public class SceneController : MonoBehaviour
     }
     private void AoOcultarModal()
     {
+        MostrarBotaoPularQuestao(false);
         StartCoroutine(proximaQuestaoTeste());
     }
 
@@ -81,6 +82,7 @@ public class SceneController : MonoBehaviour
     public void CarregarQuestaoModal(Questao questao)
     {
         Modal.Exibir(questao);
+        MostrarBotaoPularQuestao(true);
     }
     public void CarregarProximaQuestaoFluxo()
     {
@@ -112,6 +114,7 @@ public class SceneController : MonoBehaviour
     private void TempoAcabou()
     {
         if (Trilha != null) Trilha.Bloquear();
+        MostrarBotaoPularQuestao(false);
         SaidaFaseController.TempoAcabou();
     }
     #endregion
@@ -132,6 +135,14 @@ public class SceneController : MonoBehaviour
     {
         BotaoPularQuestao = Instantiate(BotaoPularQuestaoPrefab);
         BotaoPularQuestao.OnQuestaoPulada.AddListener(PularQuestaoRecebida);
+        // Só aparece junto com a pergunta (CarregarQuestaoModal / AoOcultarModal).
+        MostrarBotaoPularQuestao(false);
+    }
+
+    private void MostrarBotaoPularQuestao(bool visivel)
+    {
+        if (BotaoPularQuestao != null)
+            BotaoPularQuestao.transform.root.gameObject.SetActive(visivel);
     }
     public void PularQuestaoRecebida(int custoTrevos)
     {
